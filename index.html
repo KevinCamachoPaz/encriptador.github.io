@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="shortcut icon" href="logo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="reset.css">
+  </head>
+  <body>
+    <header class="header content">
+    <div class="header-video">
+    <video autoplay loop playsinline muted class=""src="background.mp4"></video>
+      </div>
+      <div class="header-overlay"></div>
+      <div class="header-content">
+        <h1>| ALURA ORACLE |<br>| PROYECTO |<br> -ENCRIPTADOR- </h1>
+        <br>
+        <br>
+        <br>
+     <div class="contenedor">
+            <div class="encriptador">
+                <form class="encriptador_form">
+                    <div class="text_in">
+                        <textarea name="text_in_area" id="texto" placeholder="    Ingrese el texto aqui" required></textarea>
+                        <div class="text_in_info">
+                            <div class="info">
+                                <p id="warning">Solo letras minúsculas y sin acentos</p>
+                            </div>
+                            <div class="text_in_btns">
+                                <input id="enc" type="button" value="Encriptar">
+                                <input id="des" type="button" value="Desencriptar">
+                                <br>
+                                <br>
+                            </div> 
+                        </div>
+                    </div>
+                </form>
+                <div class="text_out_sec">
+                    <div class="out_content">
+                        <div class="content1" id="default">
+                            <div class="text_out_img">
+                                <br>
+                                <img src="image.png" alt="Imagen de animada">
+                            </div><p>Ningún mensaje fue encontrado</p>
+                            <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+                        </div>
+                        <div class = "content invisible" id="result">
+                            <br>
+                            <textarea name="text_out_area" id="texto_out" disabled></textarea>
+                            <button id="copiar">Copiar</button>
+                            <br>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+        </div>   
+    </main>
+</body>
+
+<script src="encriptador.js"></script>
+</html>
